@@ -322,7 +322,6 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 - Used as a vector store for legal documents. The law chatbot uses this for its custom knowledge base
 
 - If user permits, save important details from their therapy session into db so that the therapy bot has more context
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/therapy%20info.webp)
 
 The mongo instance is running on AWS.
 
