@@ -1,6 +1,6 @@
 <div align="center">
 
-# Haven  
+# SafeSupportAI  
 *A Silent Shield, A Strong Voice.*
 
 </div>
@@ -8,7 +8,7 @@
 
 ### Inspiration 🌟
 Imagine a woman trapped in silence, enduring daily fear and abuse, unable to seek help because her every move is monitored. For millions of women worldwide, this is a daily reality.  
-**Haven** is an innovative 🌐 AI-powered solution designed to empower women in abusive situations by providing discreet ways to seek help, access mental health support, and receive legal guidance—without the risk of exposure.
+**SafeSupportAI** is an innovative 🌐 AI-powered solution designed to empower women in abusive situations by providing discreet ways to seek help, access mental health support, and receive legal guidance—without the risk of exposure.
 
 
 ### Try it out
@@ -21,18 +21,18 @@ https://amazonbedrock.vercel.app/
 ### Problem Statement 
 Globally, **1 in 3 women** experiences physical or sexual violence in her lifetime, often by an intimate partner. In India, **30% of women** have faced domestic violence at least once (WHO, National Family Health Survey). Abusers often control and monitor digital communications, isolating these women and preventing them from safely reaching out for help.
 
-### Haven’s Solution 💪
+### SafeSupportAI’s Solution 💪
 
 - **Discreet SOS Messaging through Steganography**  
   Women in abusive relationships are often unable to directly call out for help. Social media profiles and call histories are under constant surveillance by their abuser, making it difficult to seek assistance openly.  
-   *Our Solution:* Haven utilizes steganography to encode discreet distress messages within seemingly innocent images, allowing women to communicate in plain sight, without arousing suspicion.
+   *Our Solution:* SafeSupportAI utilizes steganography to encode discreet distress messages within seemingly innocent images, allowing women to communicate in plain sight, without arousing suspicion.
 
 - **AI Avatar for Mental Health Support**  
   Many survivors endure their struggles in silence, with only **10%** seeking mental health support.  
    *Our Solution:* A compassionate AI chatbot provides confidential support, offering personalized coping strategies and resources, especially important as women experiencing abuse are **80%** more likely to face mental health challenges.
 
 - **Law Bot with Knowledge of Legal Rights**  
-  In India, only **14% of women** have access to formal legal support. Haven’s Law Bot helps change this by providing instant, confidential guidance on abuse cases, custody battles, and property claims.  
+  In India, only **14% of women** have access to formal legal support. SafeSupportAI’s Law Bot helps change this by providing instant, confidential guidance on abuse cases, custody battles, and property claims.  
    *Our Solution:* Trained on the Indian constitution and other legal documents, the bot helps women gain the confidence to advocate for their rights, making legal support accessible to all.
 
 ---
@@ -40,13 +40,13 @@ Globally, **1 in 3 women** experiences physical or sexual violence in her lifeti
 ## Detailed Description 📝
 
 ### 1. Discreet SOS Messaging through Steganography
-For many women in abusive relationships who live under constant monitoring, finding a way to ask for help without alerting their abusers is critical. Haven introduces a revolutionary SOS messaging system, using **steganography** to encode distress signals within innocent-looking images, like flowers or landscapes.
+For many women in abusive relationships who live under constant monitoring, finding a way to ask for help without alerting their abusers is critical. SafeSupportAI introduces a revolutionary SOS messaging system, using **steganography** to encode distress signals within innocent-looking images, like flowers or landscapes.
 
 ### How it Works 🛠️
 
-On the user side, Haven’s process begins with message generation, where the user enters brief details of their situation. Our LLM expands these inputs into complete, coherent sentences. The user then chooses an image prompt, like a flower or landscape, which the AI generates and encodes with the distress message through steganography. Once complete, the user shares this seemingly ordinary image on social media, where it appears innocuous to others, including any abusers monitoring the profile.
+On the user side, SafeSupportAI’s process begins with message generation, where the user enters brief details of their situation. Our LLM expands these inputs into complete, coherent sentences. The user then chooses an image prompt, like a flower or landscape, which the AI generates and encodes with the distress message through steganography. Once complete, the user shares this seemingly ordinary image on social media, where it appears innocuous to others, including any abusers monitoring the profile.
 
-On the authority side, Haven's system continuously monitors social media for SOS images tagged with specific hashtags. Once detected, these images are decoded to extract the hidden message using reverse steganography. The decoded text is then broken down into structured segments for efficient analysis, after which it is stored in MongoDB, where cases are organized by severity level to prioritize urgent responses.
+On the authority side, SafeSupportAI's system continuously monitors social media for SOS images tagged with specific hashtags. Once detected, these images are decoded to extract the hidden message using reverse steganography. The decoded text is then broken down into structured segments for efficient analysis, after which it is stored in MongoDB, where cases are organized by severity level to prioritize urgent responses.
 
 
 ![alt](https://i.ibb.co/LS6195k/napkin-selection-3.png)
@@ -54,11 +54,11 @@ On the authority side, Haven's system continuously monitors social media for SOS
 
 ![alt](https://i.ibb.co/X2GTbYc/napkin-selection-4.png)
 
-### What Sets Haven Apart 🌠
+### What Sets SafeSupportAI Apart 🌠
 
 - **Fast and Simple Communication:** Women in high-stress situations can quickly type keywords; our AI generates a full distress message, reducing time and risk.
 - **Innovative Steganography Approach:** Hidden messages within everyday photos ensure total privacy from abusers, making the post appear harmless while alerting authorities.
-- **Overcoming Unreliable Channels:** Many government websites are inaccessible due to technical issues or restrictions. Haven provides a reliable, always-accessible option to seek help, bypassing these barriers.
+- **Overcoming Unreliable Channels:** Many government websites are inaccessible due to technical issues or restrictions. SafeSupportAI provides a reliable, always-accessible option to seek help, bypassing these barriers.
 
 
 ### Technical Details 
@@ -104,18 +104,18 @@ In a world where 60% of abused women lack private communication options, reachin
 
 For many survivors of abuse, the **psychological toll** is just as devastating as the physical harm. However, only **10%** of women experiencing domestic abuse seek mental health support, often due to fear of judgment, lack of privacy, or limited access to professional services.  
 - Over **80%** of women facing abuse are at a higher risk of mental health issues such as **anxiety, depression**, and **PTSD**.  
-- **Haven** aims to bridge this gap, offering an accessible, **empathetic, and private** support system for women in distress.
+- **SafeSupportAI** aims to bridge this gap, offering an accessible, **empathetic, and private** support system for women in distress.
 
 
 
 ###  **How It Works:**
 
-**Haven’s AI Avatar** provides **24/7 mental health support** through **confidential, non-judgmental conversations**. The avatar listens to users' concerns and offers:
+**SafeSupportAI’s AI Avatar** provides **24/7 mental health support** through **confidential, non-judgmental conversations**. The avatar listens to users' concerns and offers:
 - **Personalized coping strategies**  
 - **Calming techniques**  
 - **Relevant resources** to manage mental health, tailored specifically to the emotional needs of abuse survivors.
 
-Whether a user experiences **panic attacks**, **emotional exhaustion**, or simply needs a safe space to express their feelings, **Haven** is always there, offering a compassionate presence when needed most. The best part? It's completely confidential—no need to worry about being overheard or judged.
+Whether a user experiences **panic attacks**, **emotional exhaustion**, or simply needs a safe space to express their feelings, **SafeSupportAI** is always there, offering a compassionate presence when needed most. The best part? It's completely confidential—no need to worry about being overheard or judged.
 ![Therapy bot](https://i.ibb.co/RhhLdm9/napkin-selection-1.png)
 
 
@@ -133,7 +133,7 @@ Whether a user experiences **panic attacks**, **emotional exhaustion**, or simpl
   The avatar uses **advanced facial expression** and **animation control** to respond empathetically, ensuring that the user feels heard and understood during every interaction.
 
 - **24/7 Mental Health Support:**  
-  Women in abusive situations may avoid traditional mental health services due to **fear of stigma** or **retaliation**. Haven’s AI avatar provides a **secure space** where users can engage freely, **anytime** and **anywhere**, without concerns about appointments or privacy.
+  Women in abusive situations may avoid traditional mental health services due to **fear of stigma** or **retaliation**. SafeSupportAI’s AI avatar provides a **secure space** where users can engage freely, **anytime** and **anywhere**, without concerns about appointments or privacy.
 
 
 
@@ -162,24 +162,24 @@ Whether a user experiences **panic attacks**, **emotional exhaustion**, or simpl
 
 ## **3. Law Bot for Legal Empowerment**
 
-Haven is not just about providing immediate emotional and physical safety—it’s about **empowering women** with the knowledge of their legal rights . Our **law bot**, equipped with an in-depth understanding of the Indian Constitution (and expanding to global legal frameworks ), provides **instant guidance** on abuse cases, custody disputes, and property claims, enabling women to navigate the complex legal landscape with confidence .
+SafeSupportAI is not just about providing immediate emotional and physical safety—it’s about **empowering women** with the knowledge of their legal rights . Our **law bot**, equipped with an in-depth understanding of the Indian Constitution (and expanding to global legal frameworks ), provides **instant guidance** on abuse cases, custody disputes, and property claims, enabling women to navigate the complex legal landscape with confidence .
 
-In many parts of the world, only 14% of women have access to formal legal assistance , often due to cultural barriers, financial constraints, or lack of awareness. Haven aims to bridge this critical gap by offering **free, accessible legal guidance** at their fingertips 
+In many parts of the world, only 14% of women have access to formal legal assistance , often due to cultural barriers, financial constraints, or lack of awareness. SafeSupportAI aims to bridge this critical gap by offering **free, accessible legal guidance** at their fingertips 
 
 ### **How It Works: 🤖**
 
-Haven’s law bot is designed to provide **clear, understandable** information on a wide range of legal issues, tailored to the user’s unique situation . Women in need can simply ask the bot questions related to **abuse**, **divorce**, **child custody**, **property rights**, or other legal concerns, and receive instant, easy-to-understand responses based on national and international laws 
+SafeSupportAI’s law bot is designed to provide **clear, understandable** information on a wide range of legal issues, tailored to the user’s unique situation . Women in need can simply ask the bot questions related to **abuse**, **divorce**, **child custody**, **property rights**, or other legal concerns, and receive instant, easy-to-understand responses based on national and international laws 
 
 ![Law Bot Image](https://i.ibb.co/cXR59by/napkin-selection-2.png)
 
 
 ### **What Sets It Apart: 💡**
 
-- **Accessible, On-Demand Legal Support:** Unlike traditional legal systems where waiting for an appointment or expensive consultations can delay action, the Haven law bot is available 24/7 to provide **immediate legal advice** 🕒. Women no longer have to wait to understand their rights or options; the bot offers quick, reliable answers to legal queries at any time.
+- **Accessible, On-Demand Legal Support:** Unlike traditional legal systems where waiting for an appointment or expensive consultations can delay action, the SafeSupportAI law bot is available 24/7 to provide **immediate legal advice** 🕒. Women no longer have to wait to understand their rights or options; the bot offers quick, reliable answers to legal queries at any time.
   
-- **Global Reach & Customizable to Local Laws:** Haven’s law bot is designed to adapt to various countries' laws . Whether users are in **India**, the **US**, or beyond, they will receive information specific to their region's legal framework, ensuring the advice is **relevant** and **applicable** to their situation.
+- **Global Reach & Customizable to Local Laws:** SafeSupportAI’s law bot is designed to adapt to various countries' laws . Whether users are in **India**, the **US**, or beyond, they will receive information specific to their region's legal framework, ensuring the advice is **relevant** and **applicable** to their situation.
 
-- **Empowerment Through Knowledge:** Legal systems can often feel intimidating or inaccessible, especially for women facing abuse or discrimination. By providing easy access to legal resources, Haven empowers women to take **informed action**. It helps them advocate for their rights, pursue justice, and better understand the complexities of legal processes 
+- **Empowerment Through Knowledge:** Legal systems can often feel intimidating or inaccessible, especially for women facing abuse or discrimination. By providing easy access to legal resources, SafeSupportAI empowers women to take **informed action**. It helps them advocate for their rights, pursue justice, and better understand the complexities of legal processes 
 
 ### **Technical Details 🛠️**
 
@@ -332,7 +332,7 @@ The mongo instance is running on AWS.
 
 - Text Generation and Text Expansion ✍️
 
-  - AI powers Haven's ability to transform brief, incomplete messages into coherent, full distress signals. Through Large Language Models (LLMs) like Titan Text G1 - Express, Haven expands user input, turning simple keywords or short phrases into comprehensive messages. This is essential in high-stress situations where a woman may not have the time or mental clarity to articulate her circumstances in full. The model ensures that the message accurately represents the severity of the situation while still being discreet.
+  - AI powers SafeSupportAI's ability to transform brief, incomplete messages into coherent, full distress signals. Through Large Language Models (LLMs) like Titan Text G1 - Express, SafeSupportAI expands user input, turning simple keywords or short phrases into comprehensive messages. This is essential in high-stress situations where a woman may not have the time or mental clarity to articulate her circumstances in full. The model ensures that the message accurately represents the severity of the situation while still being discreet.
   - Example: If a user types “help, scared, locked in room,” the AI expands it into a full message like: "I am trapped in my room, scared and unable to leave. Please help me." This message is then encoded in an image to be shared safely.
   - Using **Titan Text G1 - Express** LLM model
 
@@ -344,7 +344,7 @@ The mongo instance is running on AWS.
 
 - AI-Powered Poem Generation 📝
 
-  - In moments of emotional distress, sometimes the simplest words can bring comfort. Haven's AI-Powered Poem Generator provides empowering, reassuring poems designed to remind women that help is on the way and that they are not alone. The AI generates short, encouraging poems based on the user's emotional state or current needs. These poems are designed to provide emotional support and the assurance that change is possible.
+  - In moments of emotional distress, sometimes the simplest words can bring comfort. SafeSupportAI's AI-Powered Poem Generator provides empowering, reassuring poems designed to remind women that help is on the way and that they are not alone. The AI generates short, encouraging poems based on the user's emotional state or current needs. These poems are designed to provide emotional support and the assurance that change is possible.
   - Using **Titan Text G1 - Express** LLM model
 
 - AI to Detect Severity of Situations 🚨
@@ -359,13 +359,13 @@ The mongo instance is running on AWS.
 
 - AI-Powered Law Bot for Legal Support ⚖️
 
-  - Haven’s Law Bot leverages AI to offer instant, confidential legal guidance. Trained on a vast array of legal resources—including national constitutions, local laws, and case precedents—the AI provides women with easy-to-understand answers to their legal questions, empowering them to take control of their situations. The Law Bot breaks down complex legal jargon into simple language, ensuring clarity and accessibility.
+  - SafeSupportAI’s Law Bot leverages AI to offer instant, confidential legal guidance. Trained on a vast array of legal resources—including national constitutions, local laws, and case precedents—the AI provides women with easy-to-understand answers to their legal questions, empowering them to take control of their situations. The Law Bot breaks down complex legal jargon into simple language, ensuring clarity and accessibility.
   - Example: A user can ask, "What should I do if my spouse is abusing me?" and the Law Bot will provide a clear step-by-step answer based on the relevant legal rights, such as filing a complaint or seeking a restraining order. 
   - Using **Titan Text G1 - Express** LLM model
 
 - Therapy Bot for Mental Health Support 💬
 
-  - Haven’s Therapy Bot uses AI to provide personalized mental health support. This bot offers coping strategies, emotional support, and mindfulness exercises to help women manage anxiety, depression, and PTSD. By analyzing the user's input, the AI tailors its responses to the emotional state of the user, ensuring relevant advice is given in real-time.
+  - SafeSupportAI’s Therapy Bot uses AI to provide personalized mental health support. This bot offers coping strategies, emotional support, and mindfulness exercises to help women manage anxiety, depression, and PTSD. By analyzing the user's input, the AI tailors its responses to the emotional state of the user, ensuring relevant advice is given in real-time.
   - Example: If a user is feeling anxious, the Therapy Bot may suggest breathing exercises, a grounding technique, or offer calming affirmations to reduce stress.
   - Using **Titan Text G1 - Express** LLM model
 
