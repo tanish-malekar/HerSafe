@@ -10,11 +10,9 @@
 Imagine a woman trapped in silence, enduring daily fear and abuse, unable to seek help because her every move is monitored. For millions of women worldwide, this is a daily reality.  
 **Haven** is an innovative 🌐 AI-powered solution designed to empower women in abusive situations by providing discreet ways to seek help, access mental health support, and receive legal guidance—without the risk of exposure.
 
-### DEMO VIDEO:
-https://www.youtube.com/watch?v=qxb3891TGzw 
 
 ### Try it out
-https://haven-aws.framer.website/
+https://amazonbedrock.vercel.app/
 
 <br/>
 
@@ -87,7 +85,6 @@ On the authority side, Haven's system continuously monitors social media for SOS
 - Text Decomposition: The decoded message is analyzed and broken down into structured data fields (e.g., urgency level, nature of the abuse) using natural language processing techniques. This decomposition facilitates the classification of the message’s severity and content type.
 - Storage in MongoDB: The parsed data is stored in MongoDB in a structured format, utilizing MongoDB’s document-based architecture to facilitate efficient retrieval and querying. Data fields are indexed for real-time access, enabling authorities to prioritize cases based on urgency and ensuring streamlined incident response.
 
-![User Flow](https://storage.googleapis.com/example-offi-1/flow.webp)
 
 
 #### Culprit Similarity Matching
@@ -101,23 +98,7 @@ When an authority selects "Find Match," the system uses cosine similarity on sto
 
 ### Impact
 In a world where 60% of abused women lack private communication options, reaching out for help becomes nearly impossible. Abusers often control access to phones, messages, and the internet, trapping women in a cycle of silence and fear. Discreet SOS Messaging addresses this urgent need for a safe, covert communication channel, allowing women to reach out without fear of being caught. It’s a solution designed to break the silence when speaking out is dangerous.\
-### Screenshots
 
-**User flow**
-
-![Alt](https://storage.googleapis.com/example-offi-1/p1.png)
-![Alt text](https://storage.googleapis.com/example-offi-1/userflow2amazon.webp)
-![Alt text](https://storage.googleapis.com/example-offi-1/titan%20img%20gen.webp)
-![Alt text](https://storage.googleapis.com/example-offi-1/share.png)
-
-**Authroity flow**
-
-![Alt text](https://storage.googleapis.com/example-offi-1/admintable.webp)
-
-![Alt text](https://storage.googleapis.com/example-offi-1/issue%20view%20admin.webp)
-
-![Alt text](https://storage.googleapis.com/example-offi-1/culprit.webp)
----
 
 ##  **2. AI Avatar for Mental Health Support** 
 
@@ -157,7 +138,6 @@ Whether a user experiences **panic attacks**, **emotional exhaustion**, or simpl
 
 
 ### 🛠️ **Technical Details:**
-![Image](https://storage.googleapis.com/example-offi-1/therapy%20bot%20flow%20amazon.webp)
 
 - **Model and Animation Loading:**  
   Upon initiating the conversation, the AI fetches **3D model files** (.glb format) and **animations** to bring the avatar to life. The avatar’s **facial morph targets** and animation sequences are initialized using **useGLTF**, allowing for **human-like interactions** with empathy.
@@ -176,11 +156,6 @@ Whether a user experiences **panic attacks**, **emotional exhaustion**, or simpl
 
 - **Animation Management:**  
   The avatar transitions smoothly between different **animations** (e.g., from **Idle** to **Talking**), making the interaction feel natural and **engaging**, reinforcing the emotional tone of the conversation.
-
-
-### Screenshots
-
-![Alt text](https://storage.googleapis.com/example-offi-1/therapy%20bot.webp)
 
 
 ---
@@ -207,7 +182,6 @@ Haven’s law bot is designed to provide **clear, understandable** information o
 - **Empowerment Through Knowledge:** Legal systems can often feel intimidating or inaccessible, especially for women facing abuse or discrimination. By providing easy access to legal resources, Haven empowers women to take **informed action**. It helps them advocate for their rights, pursue justice, and better understand the complexities of legal processes 
 
 ### **Technical Details 🛠️**
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/law%20bot%20tech.webp)
 
 **Preprocessing Phase (Document Embedding Preparation) :**
 1. Collect legal documents, such as the Indian Constitution and related statutes 
@@ -231,12 +205,6 @@ Haven’s law bot is designed to provide **clear, understandable** information o
 1. Present the generated response to the user in a **conversational format**.
 2. Optionally, provide additional options for the user to ask follow-up questions or receive more detailed legal explanations.
 
-
-### Screenshot
-
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/law%20bot.webp)
-
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/lawbot%20res.webp)
 
 ### **Impact**
 
@@ -347,19 +315,16 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 ---
 
-### **Where MongoDB is used 🤖:**
+### **How MongoDB is used 🤖:**
 - Used as db for distress sos message and for saving culprit info & embedding
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/mongo.webp)
 
 
 - Used as a vector store for legal documents. The law chatbot uses this for its custom knowledge base
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/docembeddeing.webp)
 
 - If user permits, save important details from their therapy session into db so that the therapy bot has more context
 ![Law Bot Image](https://storage.googleapis.com/example-offi-1/therapy%20info.webp)
 
-The mongo instance is running on AWS
-![Law Bot Image](https://storage.googleapis.com/example-offi-1/mongo%20on%20aws.webp)
+The mongo instance is running on AWS.
 
 ### **How AI Is Used Throughout the Project 🤖:**
 
