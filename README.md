@@ -40,12 +40,6 @@ On the authority side, SafeSupportAI's system continuously monitors social media
 
 ![alt](https://i.ibb.co/X2GTbYc/napkin-selection-4.png)
 
-### What Sets SafeSupportAI Apart 🌠
-
-- **Fast and Simple Communication:** Women in high-stress situations can quickly type keywords; our AI generates a full distress message, reducing time and risk.
-- **Innovative Steganography Approach:** Hidden messages within everyday photos ensure total privacy from abusers, making the post appear harmless while alerting authorities.
-- **Overcoming Unreliable Channels:** Many government websites are inaccessible due to technical issues or restrictions. SafeSupportAI provides a reliable, always-accessible option to seek help, bypassing these barriers.
-
 
 ### Technical Details 
 
@@ -73,19 +67,6 @@ On the authority side, SafeSupportAI's system continuously monitors social media
 
 
 
-#### Culprit Similarity Matching
-
-When an authority selects "Find Match," the system uses cosine similarity on stored embeddings to find the top N similar profiles, enabling quick connections across related cases.
-
-**Working**
-- Data Embedding: The details provided (physical traits, behaviors, etc.) are passed through an embedding model, creating a dense vector that represents the data in multi-dimensional space.
-- Vector-Based Search: When a match search is triggered, a vector search is executed in MongoDB Atlas Vector Search. Cosine similarity is calculated to determine the closest matching profiles.
-- Match Ranking and Filtering: Results are ranked by similarity score, allowing for threshold-based filtering to adjust for specificity.
-
-### Impact
-In a world where 60% of abused women lack private communication options, reaching out for help becomes nearly impossible. Abusers often control access to phones, messages, and the internet, trapping women in a cycle of silence and fear. Discreet SOS Messaging addresses this urgent need for a safe, covert communication channel, allowing women to reach out without fear of being caught. It’s a solution designed to break the silence when speaking out is dangerous.\
-
-
 ##  **2. AI Avatar for Mental Health Support** 
 
 For many survivors of abuse, the **psychological toll** is just as devastating as the physical harm. However, only **10%** of women experiencing domestic abuse seek mental health support, often due to fear of judgment, lack of privacy, or limited access to professional services.  
@@ -103,23 +84,6 @@ For many survivors of abuse, the **psychological toll** is just as devastating a
 
 Whether a user experiences **panic attacks**, **emotional exhaustion**, or simply needs a safe space to express their feelings, **SafeSupportAI** is always there, offering a compassionate presence when needed most. The best part? It's completely confidential—no need to worry about being overheard or judged.
 ![Therapy bot](https://i.ibb.co/RhhLdm9/napkin-selection-1.png)
-
-
-
-### ✨ **What Sets It Apart:**
-
-- **Tailored to Abuse Survivors:**  
-  Unlike generic mental health apps, our AI avatar is specially trained to recognize and address the **unique psychological needs** of abuse survivors. The AI offers strategies that speak directly to the trauma of **intimate partner violence**, helping survivors manage their symptoms more effectively.
-
-- **Personalized Conversations:**  
-  By leveraging data from previous interactions, the AI avatar provides a **tailored experience**, understanding emotional states and offering more relevant support.  
-  **(Data storage only with user consent)**
-
-- **💬 Real-Time, Empathetic Conversations:**  
-  The avatar uses **advanced facial expression** and **animation control** to respond empathetically, ensuring that the user feels heard and understood during every interaction.
-
-- **24/7 Mental Health Support:**  
-  Women in abusive situations may avoid traditional mental health services due to **fear of stigma** or **retaliation**. SafeSupportAI’s AI avatar provides a **secure space** where users can engage freely, **anytime** and **anywhere**, without concerns about appointments or privacy.
 
 
 
@@ -159,14 +123,6 @@ SafeSupportAI’s law bot is designed to provide **clear, understandable** infor
 ![Law Bot Image](https://i.ibb.co/cXR59by/napkin-selection-2.png)
 
 
-### **What Sets It Apart: 💡**
-
-- **Accessible, On-Demand Legal Support:** Unlike traditional legal systems where waiting for an appointment or expensive consultations can delay action, the SafeSupportAI law bot is available 24/7 to provide **immediate legal advice** 🕒. Women no longer have to wait to understand their rights or options; the bot offers quick, reliable answers to legal queries at any time.
-  
-- **Global Reach & Customizable to Local Laws:** SafeSupportAI’s law bot is designed to adapt to various countries' laws . Whether users are in **India**, the **US**, or beyond, they will receive information specific to their region's legal framework, ensuring the advice is **relevant** and **applicable** to their situation.
-
-- **Empowerment Through Knowledge:** Legal systems can often feel intimidating or inaccessible, especially for women facing abuse or discrimination. By providing easy access to legal resources, SafeSupportAI empowers women to take **informed action**. It helps them advocate for their rights, pursue justice, and better understand the complexities of legal processes 
-
 ### **Technical Details 🛠️**
 
 **Preprocessing Phase (Document Embedding Preparation) :**
@@ -191,10 +147,6 @@ SafeSupportAI’s law bot is designed to provide **clear, understandable** infor
 1. Present the generated response to the user in a **conversational format**.
 2. Optionally, provide additional options for the user to ask follow-up questions or receive more detailed legal explanations.
 
-
-### **Impact**
-
-The law bot provides **immediate access** to legal knowledge, which can be a **game-changer** for women who otherwise might not know their rights or how to protect themselves . By offering **timely legal insights**, women can make more informed decisions about their safety, custody battles, or financial security, ultimately empowering them to take **control** of their lives 
 
 ---
 
@@ -225,187 +177,4 @@ The law bot provides **immediate access** to legal knowledge, which can be a **g
 #### **Deployment**
 - **Render** for backend deployment 
 - **Vercel** for frontend deployment 
-
-
-## How to set it up in local
-
-**Prerequisite**
-
-- We require a mongo db cluster, Gemini API l=key, groq API key, clerk key, elevenlabs key AWS configs
-
-### **Backend**
-
-- Create virtual env and activate it
-
-```
-python -m venv .venv
-.\.venv\Scripts\Activate (in windows)
-```
-
-- Install the necessary dependencies from the requirements.txt file:
-
-```
-pip install -r backend/requirements.txt
-```
-
-- Add the required keys in .env file
-
-```
-MONGO_ENDPOINT=
-GEMINI_API_KEY=
-GROQ_API_TOKEN=g
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=
-S3_BUCKET_NAME=
-```
-
-- Run the FastAPI Server Locally
-
-```
-fastapi dev backend/main.py
-
-or
-
-uvicorn backend.main:app --reload
-```
-
-Then open http://127.0.0.1:8000/docs to see the endpoints
-
-### **Frontend**
-
-- Install the required pacakges
-
-```
-npm install
-```
-
-- Start the application
-
-```
-npm run dev
-```
-
-Then open http://localhost:3000/ to see the application
-
-- Add the keys in .env.local
-
-```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-GOOGLE_API_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-```
-
-
----
-
-### **How MongoDB is used 🤖:**
-- Used as db for distress sos message and for saving culprit info & embedding
-
-
-- Used as a vector store for legal documents. The law chatbot uses this for its custom knowledge base
-
-- If user permits, save important details from their therapy session into db so that the therapy bot has more context
-
-The mongo instance is running on AWS.
-
-### **How AI Is Used Throughout the Project 🤖:**
-
-**(Category: Best Use of Amazon Bedrock)**
-
-- Text Generation and Text Expansion ✍️
-
-  - AI powers SafeSupportAI's ability to transform brief, incomplete messages into coherent, full distress signals. Through Large Language Models (LLMs) like Titan Text G1 - Express, SafeSupportAI expands user input, turning simple keywords or short phrases into comprehensive messages. This is essential in high-stress situations where a woman may not have the time or mental clarity to articulate her circumstances in full. The model ensures that the message accurately represents the severity of the situation while still being discreet.
-  - Example: If a user types “help, scared, locked in room,” the AI expands it into a full message like: "I am trapped in my room, scared and unable to leave. Please help me." This message is then encoded in an image to be shared safely.
-  - Using **Titan Text G1 - Express** LLM model
-
-- Culprit matching
-    - When a user reports a distress situation, details about the culprit's physical and behavioral characteristics are embedded as vector representations. These embeddings capture nuanced details about the individual, creating a unique profile that is stored in MongoDB’s vector database.
-   - Similarity Search with Cosine Similarity:
-    When an authority initiates a search by selecting "Find Match," the system performs a cosine similarity operation on the stored embeddings. By comparing the incoming profile with existing data, the system identifies top N matches based on similarity scores, allowing authorities to see connections across reported cases.
-  - Using **Titan Text G1 - Express** LLM model
-
-- AI-Powered Poem Generation 📝
-
-  - In moments of emotional distress, sometimes the simplest words can bring comfort. SafeSupportAI's AI-Powered Poem Generator provides empowering, reassuring poems designed to remind women that help is on the way and that they are not alone. The AI generates short, encouraging poems based on the user's emotional state or current needs. These poems are designed to provide emotional support and the assurance that change is possible.
-  - Using **Titan Text G1 - Express** LLM model
-
-- AI to Detect Severity of Situations 🚨
-
-  - The LLM processes large text inputs and sorts them based on the severity and nature of the abuse, making it easier for authorities to quickly take action without reading through long descriptions. 
-
-- Image Generation 🖼️
-
-  - AI is used to create custom images based on user input, such as landscapes, flowers, or everyday objects. This enables the use of steganography—embedding distress messages within the images. These generated images appear completely innocent to outsiders, while secretly containing encoded help requests.
-  - Example: A user may select an image of a flower. The AI embeds a distress message, which looks like a normal social media post but contains a hidden cry for help when decoded.
-  - Using **Titan Image Generator VI** LLM model
-
-- AI-Powered Law Bot for Legal Support ⚖️
-
-  - SafeSupportAI’s Law Bot leverages AI to offer instant, confidential legal guidance. Trained on a vast array of legal resources—including national constitutions, local laws, and case precedents—the AI provides women with easy-to-understand answers to their legal questions, empowering them to take control of their situations. The Law Bot breaks down complex legal jargon into simple language, ensuring clarity and accessibility.
-  - Example: A user can ask, "What should I do if my spouse is abusing me?" and the Law Bot will provide a clear step-by-step answer based on the relevant legal rights, such as filing a complaint or seeking a restraining order. 
-  - Using **Titan Text G1 - Express** LLM model
-
-- Therapy Bot for Mental Health Support 💬
-
-  - SafeSupportAI’s Therapy Bot uses AI to provide personalized mental health support. This bot offers coping strategies, emotional support, and mindfulness exercises to help women manage anxiety, depression, and PTSD. By analyzing the user's input, the AI tailors its responses to the emotional state of the user, ensuring relevant advice is given in real-time.
-  - Example: If a user is feeling anxious, the Therapy Bot may suggest breathing exercises, a grounding technique, or offer calming affirmations to reduce stress.
-  - Using **Titan Text G1 - Express** LLM model
-
-
-- Vector Embedding for Personalized Experience 🧠
-
-  - To make interactions with the AI more personalized and contextually aware, vector embeddings are used to store and retrieve information. For each user, key data points (like their emotional state, past conversations, and preferences) are stored in MongoDB using embeddings generated from AI models like Sentence Transformers. This allows the AI to provide more informed responses over time.
-  - Example: The AI can remember past interactions, such as a user’s previous emotional states or preferred coping strategies. This personalized knowledge allows the AI to provide more targeted advice, improving the support it offers over time.
-  -  Using **Titan Text G1 - Express** LLM model and **LangChain for embedding**
-
-
-### **How Atlas Vector Search Is Used in the Project 🤖:**
-
-**(Category: Best Use of Atlas Vector Search)**
-
-Atlas Vector Search is leveraged in this project to efficiently search and match perpetrators based on previously stored data embeddings, enabling quick identification of repeat offenders. The use of Atlas Vector Search allows authorities to find the closest matches for a given suspect profile based on various characteristics, such as physical and behavioral features, stored as vector embeddings
-
-```
-    results_cursor = collection.aggregate(
-        [
-            {
-                "$vectorSearch": {
-                    "path": "culprit_embedding",
-                    "index": "culpritIndex",
-                    "queryVector": description_embedding,
-                    "numResults": num_results,
-                    "numCandidates": num_candidates,  # Required for approximate search
-                    "numDimensions": 768,  # Specify the dimensionality of the embedding
-                    "similarity": "euclidean",  # Specify similarity metric
-                    "type": "knn",  # Use "knn" for nearest-neighbor search
-                    "limit": num_results,  # Set the limit parameter
-                },
-            },
-            {
-                "$project": {
-                    "culprit": 1,  # Replace with the field that contains associated text
-                    "culprit_embedding": 1,  # Include embedding only if needed
-                    "_id": 1,  # Include the document ID if useful
-                }
-            },
-        ]
-    )
-```
-Key Benefits:
-
-- Speed: Atlas Vector Search accelerates the process of finding similar offenders, providing authorities with actionable data quickly.
-
-- Scalability: As the dataset grows, Atlas Vector Search scales seamlessly, allowing the system to handle an increasing number of reports and embeddings.
-
-- Accuracy: By using cosine similarity and nearest-neighbor search techniques, the system ensures accurate and relevant matches, even when dealing with complex or subtle variations in the described characteristics.
-
-### How Langchain Is Used in the Project
-
-LangChain allows efficient processing of large PDFs by recursively splitting them into smaller, manageable chunks and converting them into embeddings for further analysis or search.
-
-- Recursive PDF Splitting: LangChain’s PDFReader extracts text from PDFs, and the RecursiveCharacterTextSplitter splits the content into smaller sections based on size or logical breaks (e.g., paragraphs, chapters), ensuring that each chunk fits within token limits for embedding generation.
-- Embedding Generation: After splitting the text, LangChain uses embedding models (e.g., OpenAI Embeddings) to convert each chunk into a vector representation. These embeddings capture the semantic meaning of the text and can be stored in a vector database for similarity searches.
 
