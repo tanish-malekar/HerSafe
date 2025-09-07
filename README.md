@@ -1,27 +1,13 @@
 <div align="center">
 
 # SafeSupportAI  
-*A Silent Shield, A Strong Voice.*
 
 </div>
-
-
-### Inspiration 🌟
-Imagine a woman trapped in silence, enduring daily fear and abuse, unable to seek help because her every move is monitored. For millions of women worldwide, this is a daily reality.  
-**SafeSupportAI** is an innovative 🌐 AI-powered solution designed to empower women in abusive situations by providing discreet ways to seek help, access mental health support, and receive legal guidance—without the risk of exposure.
-
 
 ### Try it out
 https://amazonbedrock.vercel.app/
 
-<br/>
-
-## What it Does 💡
-
-### Problem Statement 
-Globally, **1 in 3 women** experiences physical or sexual violence in her lifetime, often by an intimate partner. In India, **30% of women** have faced domestic violence at least once (WHO, National Family Health Survey). Abusers often control and monitor digital communications, isolating these women and preventing them from safely reaching out for help.
-
-### SafeSupportAI’s Solution 💪
+### SafeSupportAI Features 💪
 
 - **Discreet SOS Messaging through Steganography**  
   Women in abusive relationships are often unable to directly call out for help. Social media profiles and call histories are under constant surveillance by their abuser, making it difficult to seek assistance openly.  
